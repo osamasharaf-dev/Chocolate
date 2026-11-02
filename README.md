@@ -102,6 +102,7 @@ Tie your own box (interactive builder) → Corporate gifting → Contact → Foo
 ## Notes
 
 - The contact form shows a thank-you message but doesn't send anything yet. To make it send, wire `handleSubmit` in `components/ContactForm.jsx` to EmailJS, Formspree or an API route.
+- Link previews (WhatsApp, X, LinkedIn, iMessage) show `app/opengraph-image.jpg` (1200×630). Replace it and `app/twitter-image.jpg` to change the preview.
 - Deployed on Vercel as the project `noue-chocolate`. To redeploy by hand: `vercel deploy --prod`.
 
 ---

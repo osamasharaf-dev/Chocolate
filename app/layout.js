@@ -9,10 +9,27 @@ import '@fontsource/hanken-grotesk/700.css';
 import '@fontsource/hanken-grotesk/800.css';
 import './globals.css';
 
+const description =
+  'NOUÉ — chocolate gift boxes tied by hand in Riyadh. Weddings, newborns, graduation, Eid and corporate gifting.';
+
+// Link previews (WhatsApp, X, LinkedIn…) use app/opengraph-image.jpg and app/twitter-image.jpg.
 export const metadata = {
+  metadataBase: new URL('https://noue-chocolate.vercel.app'),
   title: 'NOUÉ Chocolate Gifts',
-  description:
-    'NOUÉ — chocolate gift boxes tied by hand in Riyadh. Weddings, newborns, graduation, Eid and corporate gifting.',
+  description,
+  openGraph: {
+    type: 'website',
+    url: '/',
+    siteName: 'NOUÉ',
+    title: 'NOUÉ Chocolate Gifts — Gifts, tied by hand',
+    description,
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NOUÉ Chocolate Gifts — Gifts, tied by hand',
+    description,
+  },
 };
 
 export const viewport = {
